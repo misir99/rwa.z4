@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+ 
+  <title>Anonimna Funkcija</title>
+</head>
+<body>
+
+<script>
+  var kvadratFunkcija = function(x) {
+    if (typeof x === 'number') {
+      return x * x;
+    } else {
+      return 'Pogreška: Očekivan je broj kao argument.';
+    }
+  };
+
+  document.write("<p>Rezultat za broj 5: " + kvadratFunkcija(5) + "</p>");
+  document.write("<p>Rezultat za string 'abc': " + kvadratFunkcija("abc") + "</p>");
+</script>
+
+</body>
+</html>

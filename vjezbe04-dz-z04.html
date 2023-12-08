@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  
+  <title>Manipulacija Poljem</title>
+</head>
+<body>
+
+<script>
+  var polje = [1, 2, 3, 4, 7, 8, 5, 6, 9, 55, 12, 4, 85];
+
+  document.write("<p>a. Inicijalna dužina polja: " + polje.length + "</p>");
+  document.write("<p>b. Sortirano polje (od najvećeg ka najmanjem): " + polje.sort((a, b) => b - a) + "</p>");
+  document.write("<p>c. Sortirano polje (od najmanjeg ka najvećem): " + polje.sort((a, b) => a - b) + "</p>");
+
+  var sortiranoPoljeBezZadnjeg = polje.slice(0, -1);
+  document.write("<p>d. Uklonjen zadnji član sortiranog polja: " + sortiranoPoljeBezZadnjeg + "</p>");
+
+  sortiranoPoljeBezZadnjeg.push(19, 22);
+  document.write("<p>e. Dodani novi članovi na kraj polja: " + sortiranoPoljeBezZadnjeg + "</p>");
+
+  var polje2 = ["Banana", "Orange", "Apple", "Mango"];
+  var polje_final = sortiranoPoljeBezZadnjeg.concat(polje2);
+  document.write("<p>f. Spojeno polje: " + polje_final + "</p>");
+</script>
+
+</body>
+</html>

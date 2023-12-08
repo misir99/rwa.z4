@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+ 
+  <title>Objekti i Petlje</title>
+</head>
+<body>
+
+<script>
+  
+  var person1 = { firstName: "Marko", lastName: "Maric", age: 40, eyeColor: "black" };
+  var person2 = { firstName: "Ana", lastName: "Anić", age: 30, eyeColor: "blue" };
+  var person3 = { firstName: "Ivan", lastName: "Ivić", age: 25, eyeColor: "brown" };
+  var person4 = { firstName: "Petra", lastName: "Perić", age: 35, eyeColor: "green" };
+
+
+  var persons = [person1, person2, person3, person4];
+
+ 
+  for (var i = 0; i < persons.length; i++) {
+    var currentPerson = persons[i];
+    document.write("<p><strong>Indeks:</strong> " + i + "</p>");
+    document.write("<p><strong>Ime:</strong> " + currentPerson.firstName + "</p>");
+    document.write("<p><strong>Prezime:</strong> " + currentPerson.lastName + "</p>");
+    document.write("<p><strong>Dob:</strong> " + currentPerson.age + "</p>");
+    document.write("<p><strong>Boja očiju:</strong> " + currentPerson.eyeColor + "</p>");
+    document.write("<hr>");
+  }
+</script>
+
+</body>
+</html>

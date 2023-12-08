@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  
+  <title>Savršeni Brojevi</title>
+</head>
+<body>
+
+<script>
+  function isSavrsenBroj(broj) {
+    for (var i = 1; i <= broj; i++) {
+      var sum = 0;
+      for (var j = 1; j < i; j++) {
+        if (i % j === 0) {
+          sum += j;
+        }
+      }
+      if (sum === i) {
+        document.write("<p>Savršen broj: " + i + "</p>");
+      }
+    }
+  }
+
+  var doBroja = 1000; 
+
+  isSavrsenBroj(doBroja);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  
+  <title>Kreiranje Objekta</title>
+</head>
+<body>
+
+<script>
+  var pas = {
+    ime: "Reks",
+    dob: 2
+  };
+
+  pas.zvuk = function() {
+    return "AV AV!";
+  };
+
+  document.write("<p>Ime psa: " + pas.ime + "</p>");
+  document.write("<p>Dob psa: " + pas.dob + " godine</p>");
+  document.write("<p>Zvuk psa: " + pas.zvuk() + "</p>");
+</script>
+
+</body>
+</html>

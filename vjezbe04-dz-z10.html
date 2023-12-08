@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+
+  <title>Random Brojevi</title>
+</head>
+<body>
+
+<script>
+  function generirajRandomBrojeve(min, max) {
+    for (var i = 0; i < 5; i++) {
+      var randomBroj = Math.floor(Math.random() * (max - min + 1) + min);
+      document.write("<p>Random broj " + (i + 1) + ": " + randomBroj + "</p>");
+    }
+  }
+
+  var donjiBroj = 10; 
+  var gornjiBroj = 50; 
+
+  generirajRandomBrojeve(donjiBroj, gornjiBroj);
+</script>
+
+</body>
+</html>

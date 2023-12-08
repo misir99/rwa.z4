@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  
+  <title>Prosti Brojevi</title>
+</head>
+<body>
+
+<script>
+  
+  function isProst(broj) {
+    for (let i = 2; i < broj; i++) {
+      if (broj % i === 0) {
+        return false;
+      }
+    }
+    return broj !== 1;
+  }
+
+  
+  for (let i = 1; i <= 1000; i++) {
+    if (isProst(i)) {
+      console.log(i); // Ispis u konzoli
+      document.body.innerHTML += i + "<br>";
+    }
+  }
+</script>
+
+</body>
+</html>
